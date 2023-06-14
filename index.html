@@ -2,23 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
 
-  <title>Responsive Device Frame</title>
+    <title>Responsive Device Frame</title>
 
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-  <main class="container">
-    
-  </main>
-  <footer class="attribution">
-  </footer>
+    <main class="main-container">
+
+        <div class="device-switcher">
+            <button onclick=flipToDesktop();>
+                <img src="images/desktop.svg" alt="desktop" class="icon-desktop filter-black">
+            </button>
+            <button onclick=flipToTablet();>
+                <img src="images/tablet.svg" alt="tablet" class="icon-tablet">
+            </button>
+            <button onclick=flipToMobile();>
+                <img src="images/mobile.svg" alt="mobile" class="icon-mobile">
+            </button>
+        </div>
+
+        <div class="preview__screen-container">
+            <div class="preview__screen-header">
+
+            </div>
+            <div class="preview__content-container">
+                <img src="images/chrono-mobile.webp" alt="mobile view" class="preview-content preview-content-mobile">
+                <img src="images/chrono-tablet.webp" alt="tablet view" class="preview-content preview-content-tablet">
+                <img src="images/chrono-desktop.png" alt="desktop view" class="preview-content preview-content-desktop">
+            </div>
+            <div class="device-footer">
+
+            </div>
+
+        </div>
+    </main>
+    <footer class="attribution">
+    </footer>
 </body>
 
 </html>
