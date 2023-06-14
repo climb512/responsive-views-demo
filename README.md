@@ -1,7 +1,7 @@
 
 ### Screenshot
 
-!(/Responsive-Device-Frame.png?raw=true)
+![Responsive-Device-Frame](https://github.com/climb512/responsive-views-demo/assets/19371146/1d6903cd-4ac6-4000-a7ad-69c5ba34e820)
 
 
 ### Built with
