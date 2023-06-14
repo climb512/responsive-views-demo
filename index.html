@@ -16,35 +16,49 @@
 </head>
 
 <body>
-    <main class="main-container">
+    <main>
+        <div class="main-container">
 
-        <div class="device-switcher">
-            <button onclick=flipToDesktop();>
-                <img src="images/desktop.svg" alt="desktop" class="icon-desktop filter-black">
-            </button>
-            <button onclick=flipToTablet();>
-                <img src="images/tablet.svg" alt="tablet" class="icon-tablet">
-            </button>
-            <button onclick=flipToMobile();>
-                <img src="images/mobile.svg" alt="mobile" class="icon-mobile">
-            </button>
+            <div class="device-switcher">
+                <button onclick=flipToDesktop();>
+                    <img src="images/desktop.svg" alt="desktop" class="icon-desktop filter-black">
+                </button>
+                <button onclick=flipToTablet();>
+                    <img src="images/tablet.svg" alt="tablet" class="icon-tablet">
+                </button>
+                <button onclick=flipToMobile();>
+                    <img src="images/mobile.svg" alt="mobile" class="icon-mobile">
+                </button>
+            </div>
+
+            <div class="preview__screen-container">
+                <div class="preview__screen-header">
+
+                </div>
+                <div class="preview__content-container">
+                    <img src="images/chrono-mobile.webp" alt="mobile view"
+                        class="preview-content preview-content-mobile">
+                    <img src="images/chrono-tablet.webp" alt="tablet view"
+                        class="preview-content preview-content-tablet">
+                    <img src="images/chrono-desktop.png" alt="desktop view"
+                        class="preview-content preview-content-desktop">
+                </div>
+                <div class="device-footer">
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="preview__screen-container">
-            <div class="preview__screen-header">
-
-            </div>
-            <div class="preview__content-container">
-                <img src="images/chrono-mobile.webp" alt="mobile view" class="preview-content preview-content-mobile">
-                <img src="images/chrono-tablet.webp" alt="tablet view" class="preview-content preview-content-tablet">
-                <img src="images/chrono-desktop.png" alt="desktop view" class="preview-content preview-content-desktop">
-            </div>
-            <div class="device-footer">
-
-            </div>
-
-        </div>
     </main>
+    <div class="other-content">
+        <p class="large-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in ea necessitatibus
+            officiis perferendis consequatur odit distinctio voluptas debitis iusto consequuntur ab omnis commodi
+            temporibus blanditiis porro neque dolore amet.</p>
+        <p class="large-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in ea necessitatibus
+            officiis perferendis consequatur odit distinctio voluptas debitis iusto consequuntur ab omnis commodi
+            temporibus blanditiis porro neque dolore amet.</p>
+    </div>
     <footer class="attribution">
     </footer>
 </body>

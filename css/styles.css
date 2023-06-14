@@ -88,8 +88,7 @@
      margin: 0 auto;
      height: 800px;
      max-width: 100%;
-
-     width: 822px;
+     width: 1060px;
  }
 
  .switched-to-mobile {
@@ -99,12 +98,12 @@
      width: 400px;
  }
 
- .switched-to-desktop {
+ /* .switched-to-desktop {
      height: 800px;
      max-width: 100%;
      min-width: 960px;
      width: 1312px;
- }
+ } */
 
  .switched-to-tablet {
      margin: 0 auto;
@@ -182,4 +181,17 @@
 
  .preview-content-desktop {
      display: block;
+ }
+
+ .other-content {
+     width: 80%;
+     margin: auto;
+     padding-top: 2rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 4rem;
+ }
+
+ .other-content p {
+     font-size: x-large;
  }
