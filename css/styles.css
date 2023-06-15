@@ -146,20 +146,15 @@
 
 
  .preview__screen-header {
-     word-wrap: break-word;
-     font-size: 100%;
-     -webkit-font-smoothing: antialiased;
-     font-family: sans-serif;
-     color: #2c3338;
-     line-height: 1.5;
      box-sizing: border-box;
      height: 35px;
      padding: 0 16px;
+     width: 100%;
+     display: flex;
+     align-items: center;
  }
 
  .preview__content-container {
-     color: #2c3338;
-     line-height: 1.5;
      box-sizing: border-box;
      overflow-y: scroll;
      height: 702px;
@@ -183,6 +178,20 @@
 
  .preview-content-desktop {
      display: block;
+ }
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9px;
+    width: 39px;
+}
+
+ .dot {
+    display: block;
+    height: 9px;
+    width: 9px;
  }
 
  .other-content {

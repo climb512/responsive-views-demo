@@ -10,6 +10,8 @@ function flipToDesktop() {
     document.getElementsByClassName("main-container")[0].classList.add('switched-to-desktop');
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-tablet');
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
+
+    document.getElementsByClassName("dots")[0].style.display = "flex";
 }
 
 function flipToTablet() {
@@ -24,6 +26,8 @@ function flipToTablet() {
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-desktop');
     document.getElementsByClassName("main-container")[0].classList.add('switched-to-tablet');
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
+
+    document.getElementsByClassName("dots")[0].style.display = "none";
 }
 
 function flipToMobile() {
@@ -38,4 +42,6 @@ function flipToMobile() {
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-desktop');
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-tablet');
     document.getElementsByClassName("main-container")[0].classList.add('switched-to-mobile');
+
+    document.getElementsByClassName("dots")[0].style.display = "none";
 }
