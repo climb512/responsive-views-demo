@@ -12,6 +12,9 @@ function flipToDesktop() {
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "flex";
+    document.getElementsByClassName("mobile-frame")[0].style.display = "none";
+    document.getElementsByClassName("preview__screen-container")[0].style.height = "737px";
+    document.getElementsByClassName("preview__content-container")[0].style.height = "702px";
 }
 
 function flipToTablet() {
@@ -28,6 +31,9 @@ function flipToTablet() {
     document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "none";
+    document.getElementsByClassName("mobile-frame")[0].style.display = "none";
+    document.getElementsByClassName("preview__screen-container")[0].style.height = "1091px";
+    document.getElementsByClassName("preview__content-container")[0].style.height = "1024px";
 }
 
 function flipToMobile() {
@@ -44,4 +50,7 @@ function flipToMobile() {
     document.getElementsByClassName("main-container")[0].classList.add('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "none";
+    document.getElementsByClassName("mobile-frame")[0].style.display = "flex";
+    document.getElementsByClassName("preview__screen-container")[0].style.height = "710px";
+    document.getElementsByClassName("preview__content-container")[0].style.height = "640px";
 }
