@@ -7,9 +7,9 @@ function flipToDesktop() {
     document.getElementsByClassName("icon-tablet")[0].classList.remove('filter-black');
     document.getElementsByClassName("icon-desktop")[0].classList.add('filter-black');
 
-    document.getElementsByClassName("main-container")[0].classList.add('switched-to-desktop');
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-tablet');
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
+    document.getElementsByClassName("component")[0].classList.add('switched-to-desktop');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-tablet');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "flex";
     document.getElementsByClassName("mobile-frame")[0].style.display = "none";
@@ -26,9 +26,9 @@ function flipToTablet() {
     document.getElementsByClassName("icon-tablet")[0].classList.add('filter-black');
     document.getElementsByClassName("icon-desktop")[0].classList.remove('filter-black');
 
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-desktop');
-    document.getElementsByClassName("main-container")[0].classList.add('switched-to-tablet');
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-mobile');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-desktop');
+    document.getElementsByClassName("component")[0].classList.add('switched-to-tablet');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "none";
     document.getElementsByClassName("mobile-frame")[0].style.display = "none";
@@ -45,9 +45,9 @@ function flipToMobile() {
     document.getElementsByClassName("icon-tablet")[0].classList.remove('filter-black');
     document.getElementsByClassName("icon-desktop")[0].classList.remove('filter-black');
 
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-desktop');
-    document.getElementsByClassName("main-container")[0].classList.remove('switched-to-tablet');
-    document.getElementsByClassName("main-container")[0].classList.add('switched-to-mobile');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-desktop');
+    document.getElementsByClassName("component")[0].classList.remove('switched-to-tablet');
+    document.getElementsByClassName("component")[0].classList.add('switched-to-mobile');
 
     document.getElementsByClassName("dots")[0].style.display = "none";
     document.getElementsByClassName("mobile-frame")[0].style.display = "flex";
