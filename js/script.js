@@ -46,12 +46,12 @@ function switchToDesktop() {
         frameWidth = "90%";
         screenWidth = "89%";
     } 
-    if (breakpoint.value == 'tablet') {
-        frameHeight = "527px";
-        screenHeight = "490px";
-        frameWidth = "760px";
-        screenWidth = "760px";
-    } 
+    // if (breakpoint.value == 'tablet') {
+    //     frameHeight = "527px";
+    //     screenHeight = "490px";
+    //     frameWidth = "760px";
+    //     screenWidth = "760px";
+    // } 
     if (breakpoint.value == 'desktop') {
         frameHeight = "737px";
         screenHeight = "700px";
@@ -89,12 +89,12 @@ function switchToTablet() {
         frameHeight = "545px";
         screenHeight = "512px";
     } 
-    if (breakpoint.value == 'tablet') {
-        frameHeight = "570px";
-        screenHeight = "508px";
-        frameWidth = "350px";
-        screenWidth = "300px";
-    } 
+    // if (breakpoint.value == 'tablet') {
+    //     frameHeight = "570px";
+    //     screenHeight = "508px";
+    //     frameWidth = "350px";
+    //     screenWidth = "300px";
+    // } 
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "none";
     document.getElementsByClassName("preview-content-tablet")[0].style.display = "block";

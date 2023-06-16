@@ -159,7 +159,7 @@
     } 
  }
 
- @media (min-width: 651px) and (max-width: 990px) {
+ /* @media (min-width: 651px) and (max-width: 990px) {
     .device-view-switch-component:before {
         content: "tablet"; 
         display: none; 
@@ -180,7 +180,7 @@
         height: 630px;
         width:956px;
     } 
- }
+ } */
 
  .device-switcher:focus {
      color: black;
