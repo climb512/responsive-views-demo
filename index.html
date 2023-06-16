@@ -17,16 +17,17 @@
 
 <body>
     <main>
-        <div class="component">
+        <div id="breakpoint">Used by JS, diplay:none.</div>
+        <div class="device-view-switch-component">
 
             <div class="device-switcher">
-                <button onclick=flipToDesktop();>
+                <button id="btn-desktop" onclick=switchToDesktop();>
                     <img src="images/desktop.svg" alt="desktop" class="icon-desktop filter-black">
                 </button>
-                <button onclick=flipToTablet();>
+                <button id="btn-tablet" onclick=switchToTablet();>
                     <img src="images/tablet.svg" alt="tablet" class="icon-tablet">
                 </button>
-                <button onclick=flipToMobile();>
+                <button id="btn-mobile" onclick=switchToMobile();>
                     <img src="images/mobile.svg" alt="mobile" class="icon-mobile">
                 </button>
             </div>
@@ -73,6 +74,17 @@
     </main>
     <footer class="attribution">
     </footer>
+
+    <script>
+        // self executing function here
+            (function() {
+                // your page initialization code here
+                // the DOM will be available here
+                switchToDesktop();
+
+
+            })();
+        </script>
 </body>
 
 </html>

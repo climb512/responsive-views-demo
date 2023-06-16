@@ -75,9 +75,9 @@
      padding: 0;
  }
 
- /* ---end--- */
+ /* ---end reset--- */
 
- .component {
+ .device-view-switch-component {
      word-wrap: break-word;
      font-size: 100%;
      -webkit-font-smoothing: antialiased;
@@ -99,19 +99,19 @@
  }
 
  .switched-to-tablet {
-    height: 1140px;
+    height: 1054px;
     margin: 0 auto;
     max-width: 100%;
     width: 910px;
     padding: 0 32px 32px;
  }
 
-  /* .switched-to-desktop {
+ .switched-to-desktop {
      height: 800px;
      max-width: 100%;
      min-width: 960px;
-     width: 1312px;
- } --These are default on page load */
+     width: 1060px;
+ }
 
  .device-switcher {
      width: 100%;
@@ -121,6 +121,65 @@
      justify-content: center;
      align-items: center;
      gap: 1.5rem;
+ }
+
+
+ /** TESTING @media queries to set mock-device viewport height 
+  * NOTE: .switched-to-... classes control the height that the compnent sits above
+  * the other content */
+
+ #breakpoint {
+    display: none;
+ }
+ 
+ .device-view-switch-component:before {
+    content: "desktop";
+    display: none; /* Prevent from displaying. */
+  }
+ 
+ @media (max-width: 650px) {
+    .device-view-switch-component:before {
+        content: "mobile"; 
+        display: none; 
+      }
+
+    .device-view-switch-component {
+        height: 400px;
+    }
+    .switched-to-mobile {
+        height: 387px;
+        width: 200px;
+    }
+    .switched-to-tablet {
+        height: 630px;
+        width: 455px;
+    }
+    .switched-to-desktop {
+        width:616px;
+    } 
+ }
+
+ @media (min-width: 651px) and (max-width: 990px) {
+    .device-view-switch-component:before {
+        content: "tablet"; 
+        display: none; 
+      }
+
+    .device-view-switch-component {
+        height: 600px;
+    }
+    .switched-to-mobile {
+        height: 387px;
+        width: 200px;
+    }
+    .switched-to-tablet {
+        height: 630px;
+        width: 455px;
+    }
+    .switched-to-desktop {
+        height: 630px;
+        width:956px;
+    } 
  }
 
  .device-switcher:focus {
