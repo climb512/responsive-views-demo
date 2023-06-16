@@ -16,12 +16,15 @@ window.addEventListener('resize', function () {
 
     if (viewingDesktop != null) {
         switchToDesktop();
+        console.log("desktop");
     }
     if (viewingTablet != null) {
         switchToTablet();
+        console.log("tablet");
     }
     if (viewingMobile != null) {
         switchToMobile();
+        console.log("mobile");
     }
 
 }, true).resize();
@@ -40,24 +43,12 @@ function switchToDesktop() {
     breakpoint.refreshValue();
     let frameHeight = "737px";
     let screenHeight = "702px"
+    let frameWidth = "1060px";
+    //let screenWidth = "1058px";
     if (breakpoint.value == 'mobile') {
         frameHeight = "368px";
         screenHeight = "351px";
-        frameWidth = "90%";
-        screenWidth = "89%";
-    } 
-    // if (breakpoint.value == 'tablet') {
-    //     frameHeight = "527px";
-    //     screenHeight = "490px";
-    //     frameWidth = "760px";
-    //     screenWidth = "760px";
-    // } 
-    if (breakpoint.value == 'desktop') {
-        frameHeight = "737px";
-        screenHeight = "700px";
-        frameWidth = "1060ppx";
-        screenWidth = "1060ppx";
-
+        //screenWidth = "530px";
     } 
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "none";
@@ -77,7 +68,7 @@ function switchToDesktop() {
     document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
     document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
     document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
-    document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
+    //document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
 }
 
 function switchToTablet() {
@@ -85,16 +76,14 @@ function switchToTablet() {
     breakpoint.refreshValue();
     let frameHeight = "991px";
     let screenHeight = "918px"
+    let frameWidth = "846px";
+    // let screenWidth = "784px";
     if (breakpoint.value == 'mobile') {
         frameHeight = "545px";
         screenHeight = "512px";
+        // screenWidth = "329px";
     } 
-    // if (breakpoint.value == 'tablet') {
-    //     frameHeight = "570px";
-    //     screenHeight = "508px";
-    //     frameWidth = "350px";
-    //     screenWidth = "300px";
-    // } 
+
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "none";
     document.getElementsByClassName("preview-content-tablet")[0].style.display = "block";
@@ -113,7 +102,7 @@ function switchToTablet() {
     document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
     document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
     document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
-    document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
+    // document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
 }
 
 function switchToMobile() {
@@ -121,9 +110,12 @@ function switchToMobile() {
     breakpoint.refreshValue();
     let frameHeight = "710px";
     let screenHeight = "640px"
+    let frameWidth = "400px";
+    // let screenWidth = "338px";
     if (breakpoint.value == 'mobile') {
-        frameHeight = "355px";
-        screenHeight = "320px";
+        frameHeight = "375px";
+        screenHeight = "315px";
+        // screenWidth = "180px";
     } 
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "block";
@@ -142,4 +134,6 @@ function switchToMobile() {
     document.getElementsByClassName("mobile-frame")[0].style.display = "flex";
     document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
     document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
+    document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
+    // document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
 }
