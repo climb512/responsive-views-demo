@@ -30,25 +30,26 @@ window.addEventListener('resize', function () {
 }, true);
 
 
-var frameHeight = "737px";
-var screenHeight = "702px";
+var frameHeight = "46.0625rem";
+var screenHeight = "43.875rem";
 function setDemoViewport() {
     if (breakpoint.value == 'mobile') {
-        frameHeight = "368px";
-        screenHeight = "351px";
+        frameHeight = "23rem";
+        screenHeight = "21.94rem";
     } 
 }
 
 function switchToDesktop() {
     breakpoint.refreshValue();
-    let frameHeight = "737px";
-    let screenHeight = "702px"
-    let frameWidth = "1060px";
-    //let screenWidth = "1058px";
+    let frameHeight = "46.0625rem";
+    let screenHeight = "43.875rem";
+    let frameWidth = "66.25rem";
+    //let screenWidth = "66.125rem";
     if (breakpoint.value == 'mobile') {
-        frameHeight = "368px";
-        screenHeight = "351px";
-        //screenWidth = "530px";
+        frameHeight = "23rem";
+        screenHeight = "21.94rem";
+        //screenWidth = "33.125rem";
+        /* bug -- explicitly setting preview-content-container.width removes the screen resize responsive behavior. */
     } 
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "none";
@@ -74,14 +75,14 @@ function switchToDesktop() {
 function switchToTablet() {
 
     breakpoint.refreshValue();
-    let frameHeight = "991px";
-    let screenHeight = "918px"
-    let frameWidth = "846px";
-    // let screenWidth = "784px";
+    let frameHeight = "63.975rem";
+    let screenHeight = "57.375rem"
+    let frameWidth = "52.875rem";
+    // let screenWidth = "49rem";
     if (breakpoint.value == 'mobile') {
-        frameHeight = "545px";
-        screenHeight = "490px";
-        // screenWidth = "329px";
+        frameHeight = "34rem";
+        screenHeight = "30.625rem";
+        // screenWidth = "20.5rem";
     } 
 
 
@@ -108,14 +109,14 @@ function switchToTablet() {
 function switchToMobile() {
 
     breakpoint.refreshValue();
-    let frameHeight = "710px";
-    let screenHeight = "640px"
-    let frameWidth = "400px";
-    // let screenWidth = "338px";
+    let frameHeight = "44.375rem";
+    let screenHeight = "40rem"
+    let frameWidth = "25rem";
+    // let screenWidth = "21.125rem";
     if (breakpoint.value == 'mobile') {
-        frameHeight = "375px";
-        screenHeight = "315px";
-        // screenWidth = "180px";
+        frameHeight = "23.4375rem";
+        screenHeight = "19.6875rem";
+        // screenWidth = "11.25rem";
     } 
 
     document.getElementsByClassName("preview-content-mobile")[0].style.display = "block";
