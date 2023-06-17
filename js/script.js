@@ -27,7 +27,7 @@ window.addEventListener('resize', function () {
         console.log("mobile");
     }
 
-}, true).resize();
+}, true);
 
 
 var frameHeight = "737px";
@@ -65,10 +65,10 @@ function switchToDesktop() {
 
     document.getElementsByClassName("dots")[0].style.display = "flex";
     document.getElementsByClassName("mobile-frame")[0].style.display = "none";
-    document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
-    document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
-    document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
-    //document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
+    document.getElementsByClassName("device-frame-container")[0].style.height = frameHeight;
+    document.getElementsByClassName("preview-content-container")[0].style.height = screenHeight;
+    document.getElementsByClassName("device-frame-container")[0].style.width = frameWidth;
+    //document.getElementsByClassName("preview-content-container")[0].style.width = screenWidth;
 }
 
 function switchToTablet() {
@@ -80,7 +80,7 @@ function switchToTablet() {
     // let screenWidth = "784px";
     if (breakpoint.value == 'mobile') {
         frameHeight = "545px";
-        screenHeight = "512px";
+        screenHeight = "490px";
         // screenWidth = "329px";
     } 
 
@@ -99,10 +99,10 @@ function switchToTablet() {
 
     document.getElementsByClassName("dots")[0].style.display = "none";
     document.getElementsByClassName("mobile-frame")[0].style.display = "none";
-    document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
-    document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
-    document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
-    // document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
+    document.getElementsByClassName("device-frame-container")[0].style.height = frameHeight;
+    document.getElementsByClassName("preview-content-container")[0].style.height = screenHeight;
+    document.getElementsByClassName("device-frame-container")[0].style.width = frameWidth;
+    // document.getElementsByClassName("preview-content-container")[0].style.width = screenWidth;
 }
 
 function switchToMobile() {
@@ -132,8 +132,8 @@ function switchToMobile() {
 
     document.getElementsByClassName("dots")[0].style.display = "none";
     document.getElementsByClassName("mobile-frame")[0].style.display = "flex";
-    document.getElementsByClassName("preview__screen-container")[0].style.height = frameHeight;
-    document.getElementsByClassName("preview__content-container")[0].style.height = screenHeight;
-    document.getElementsByClassName("preview__screen-container")[0].style.width = frameWidth;
-    // document.getElementsByClassName("preview__content-container")[0].style.width = screenWidth;
+    document.getElementsByClassName("device-frame-container")[0].style.height = frameHeight;
+    document.getElementsByClassName("preview-content-container")[0].style.height = screenHeight;
+    document.getElementsByClassName("device-frame-container")[0].style.width = frameWidth;
+    // document.getElementsByClassName("preview-content-container")[0].style.width = screenWidth;
 }

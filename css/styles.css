@@ -144,7 +144,6 @@
         display: none; 
     }
 
-
     .device-view-switch-component {
         height: 400px;
     }
@@ -170,7 +169,7 @@
      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(320deg) brightness(0%) contrast(104%);
  }
 
- .preview__screen-container {
+ .device-frame-container {
      box-sizing: border-box;
      border: 1px solid #dcdcde;
      max-width: 100%;
@@ -183,7 +182,7 @@
      align-items: center;  
  }
 
- .preview__screen-header {
+ .device-frame-header {
      box-sizing: border-box;
      height: 35px;
      padding: 0 16px;
@@ -192,11 +191,11 @@
      align-items: center;
  }
 
- .preview__content-container {
+ .preview-content-container {
      box-sizing: border-box;
      overflow-y: scroll;
      height: 702px;
-     width: calc(100% - 60px);
+     /* width: calc(100% - 60px); */
  }
 
  .preview-content {
