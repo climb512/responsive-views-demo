@@ -86,32 +86,27 @@
      line-height: 1.5;
      box-sizing: border-box;
      margin: 0 auto;
-     height: 50rem;
+     /* height: 50rem; */
      max-width: 100%;
      width: 66.25rem;
  }
 
  .switched-to-mobile {
-     height: 48.375rem;
+     /* height: 48.375rem; */
      margin: 0 auto;
-     max-width: 100%;
-     width: 25rem;
+     width: 220px;
  }
 
  .switched-to-tablet {
-    height: 65.875rem;
+    /* height: 65.875rem; */
     margin: 0 auto;
-    max-width: 100%;
-    width: 56.875rem;
+    width: 560px;
     padding: 0 2rem 2rem;
  }
 
  .switched-to-desktop {
-     max-height: 50rem;
-     max-width: 100%;
-     width: 66.25rem;
-     /* width: calc(100% - 20px);
-     height: calc((100vw - 20px) * 0.5625); 16:9 aspect ratio */
+     /* max-width: 100%; */
+     width: 1060px;
  }
  
  .device-switcher {
@@ -126,7 +121,7 @@
 
 
  /** TESTING @media queries to set mock-device viewport height 
-  * NOTE: .switched-to-... classes control the height that the compnent sits above
+  * NOTE: .switched-to-... classes control the height that the component sits above
   * the other content */
 
  #breakpoint {
@@ -138,27 +133,7 @@
     display: none; /* Prevent from displaying. */
   }
  
- @media (max-width: 650px) {
-    .device-view-switch-component:before {
-        content: "mobile"; 
-        display: none; 
-    }
 
-    .device-view-switch-component {
-        height: 25rem;
-    }
-    .switched-to-mobile {
-        height: 24.1875rem;
-        width: 12.5rem;
-    }
-    .switched-to-tablet {
-        height: 39.375rem;
-        width: 28.4375rem;
-    }
-    .switched-to-desktop {
-        width: 38.5rem;
-    } 
- }
 
  .device-switcher:focus {
      color: black;
@@ -175,7 +150,8 @@
      max-width: 100%;
      overflow-y: hidden;
      border-radius: 16px;
-     height: 46rem;
+     /* height: 46rem; */
+     aspect-ratio : 4/2.7;
      padding: 0;
      display: flex;
      flex-direction: column;
@@ -194,7 +170,7 @@
  .preview-content-container {
      box-sizing: border-box;
      overflow-y: scroll;
-     height: 43.875rem;
+     /* height: 43.875rem; */
      /* width: calc(100% - 60px); */
  }
 
@@ -208,14 +184,17 @@
 
  .preview-content-mobile {
      display: none;
+     /* width: 100%; */
  }
 
  .preview-content-tablet {
      display: none;
+     /* width: 100%; */
  }
 
  .preview-content-desktop {
      display: block;
+     /* width: 100% ; */
  }
 
 .dots {
