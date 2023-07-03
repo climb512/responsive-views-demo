@@ -155,7 +155,8 @@
      padding: 0;
      display: flex;
      flex-direction: column;
-     align-items: center;  
+     align-items: center; 
+     background: linear-gradient(56deg, rgba(0,1,6,0.9332107843137255) 5%, rgba(0,0,6,0.7483368347338936) 93%);
  }
 
  .device-frame-header {
@@ -169,9 +170,8 @@
 
  .preview-content-container {
      box-sizing: border-box;
-     overflow-y: scroll;
-     /* height: 43.875rem; */
-     /* width: calc(100% - 60px); */
+     overflow-y:auto;
+     border-radius: 10px;
  }
 
  .preview-content {
@@ -232,3 +232,25 @@
  .other-content p {
      font-size: x-large;
  }
+
+ /* Designing for scroll-bar */
+ ::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(160, 22, 4);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ec0303c5;
+}
