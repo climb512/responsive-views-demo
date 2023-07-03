@@ -156,7 +156,7 @@
      display: flex;
      flex-direction: column;
      align-items: center; 
-     background: linear-gradient(56deg, rgba(0,1,6,0.9332107843137255) 5%, rgba(0,0,6,0.7483368347338936) 93%);
+     background: linear-gradient(56deg, rgba(2, 2, 2, 0.933) 1%, rgba(10, 10, 10, 0.748) 99%);
  }
 
  .device-frame-header {
@@ -235,7 +235,7 @@
 
  /* Designing for scroll-bar */
  ::-webkit-scrollbar {
-    width: 9px;
+    width: 15px;
 }
 
 /* Track */
