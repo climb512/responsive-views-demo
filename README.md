@@ -1,7 +1,7 @@
 
 ### Screenshot
 
-![Responsive-Device-Frame](https://github.com/climb512/responsive-views-demo/assets/19371146/1d6903cd-4ac6-4000-a7ad-69c5ba34e820)
+![Responsive-Device-Frame] ![screenshot](https://github.com/climb512/responsive-views-demo/assets/19371146/40ea5e47-a788-4787-8d56-ddf2c89bb9f5)
 
 
 ### Built with
